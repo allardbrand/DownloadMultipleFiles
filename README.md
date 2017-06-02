@@ -1,7 +1,7 @@
 # Multi-file download
 
 ## Description
-Download multiple files from your Mendix application in one click.
+Download multiple files from your Mendix application in one click
 
 ## Demo
 See [https://multi-filedownload.mxapps.io/](https://multi-filedownload.mxapps.io/) for an example
