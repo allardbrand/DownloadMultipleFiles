@@ -6,6 +6,9 @@ Download multiple files from your Mendix application in one click
 ## Demo
 See [https://multi-filedownload.mxapps.io/](https://multi-filedownload.mxapps.io/) for an example
 
+Username: demo
+Password: Demo123!
+
 ## Features and limitations
 *	Download a list of files based on a microflow
 *	Download a list of files based on an XPath
