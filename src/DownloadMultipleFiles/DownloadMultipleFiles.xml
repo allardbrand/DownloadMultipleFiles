@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="DownloadMultipleFiles.widget.DownloadMultipleFiles" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Multi-file download</name>
+    <description>Download multiple files from your Mendix application in one click</description>
+
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB2klEQVRIS83VTahNYRTG8d+Vj4EoBhggKUlJQkkJEzKR0s1XBgYUSUoZGfgoTAyQ7wklg5vcwshHIQMGTLihFMoUkYgSWrW2dsex33PULe/knH32fp7/We961rt7DPLqGWR//wVgOrZhGabiJ17iOk7gRdMuNFUQ9/ZgN77jBp6m2UwsxRDsx4EE/8FqApzCFlzATrxtUU/AUazGMexoV8nfAOtxEYexqxCEk9iKXlxufbYOGIuVmIhNeId5+FEADMMTDMc5vMFVvA9dBViHMxhVM9uQVXSS5KggKqnWJ2xGXwAW4Tbu5T4OYBZe4UMn7hiH8RmC0EZPFmBxAG5hGmbgS4eGpcdG4nkAAxCmpzMpJWE3949EL7sB7M25CMg+xHXT+g24iZjW2KLPDYpuABGWZxiIChbiDu5nkx9jNiajvwYsAYZmKqsmz48AVTFdg7MYXTP8irW4kr81AULXh+X57MeM6aX6oI3BCkzC62z6HDzIyLUDHELoViEG9Tge4VoV8aazaAS2I4ZwbjY1Dr96k79l32KLD+Jh01FRimCpB231pRfOFGxM5ZKYzPx+N4MRl+dzS/8JEKL6P281Kc5DqYLKsB2kaB7iTgGtlXRk3i2ggtQ/S8HwC8QyZOen+r8yAAAAAElFTkSuQmCC</icon>
+
+    <properties>
+        <property key="sourceType" type="enumeration" required="true" defaultValue="microflow">
+            <caption>Source type</caption>
+            <category>Data source</category>
+            <description>Type of data source to be used (microflow or XPath)</description>
+            <enumerationValues>
+                <enumerationValue key="microflow">Microflow</enumerationValue>
+                <enumerationValue key="xpath">XPath</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="returnEntity" type="entity" required="true">
+            <caption>Return entity</caption>
+            <category>Data source</category>
+            <description>The type of entity that will be returned by the data source microflow or XPath</description>
+        </property>
+        <property key="returnEntityConstraint" type="entityConstraint" entityProperty="returnEntity" required="false">
+            <caption>Return entity constraint</caption>
+            <category>Data source</category>
+            <description>Optional constraint for return entity when using XPath</description>
+        </property>
+        <property key="sourceMicroflow" type="microflow" required="false">
+            <caption>Source microflow</caption>
+            <category>Data source</category>
+            <description>Microflow to use when microflow has been selected as source type</description>
+            <returnType type="Object" entityProperty="returnEntity" isList="true" />
+        </property>
+        <property key="buttonCaption" type="string" required="false">
+            <caption>Button caption</caption>
+            <category>Appearance</category>
+            <description>Caption of the download button</description>
+        </property>
+        <property key="autoDownload" type="boolean" defaultValue="false" required="true">
+            <caption>Auto-start download</caption>
+            <category>Behaviour</category>
+            <description>Automatically start download when the page containing this widget is opened</description>
+        </property>   
+    </properties>
+</widget>
