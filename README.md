@@ -17,4 +17,4 @@ See [https://multi-filedownload.mxapps.io/](https://multi-filedownload.mxapps.io
 4.  Optionally set the option 'auto-start download' in order to automatically start the download when the page is opened
 
 ## Credits
-This widget is based on the [multi-download](https://github.com/sindresorhus/multi-download) lib of Sindre Sorhus
+This widget is based on the [multi-download](https://github.com/sindresorhus/multi-download) lib of [Sindre Sorhus](https://github.com/sindresorhus)
