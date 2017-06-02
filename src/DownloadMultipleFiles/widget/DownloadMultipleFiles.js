@@ -69,7 +69,7 @@ define([
                 }
             });
 
-            downloadMultiple(urls);
+            downloadMultiple.startDownload(urls);
         },
 
         update: function (obj, callback) {
