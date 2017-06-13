@@ -86,10 +86,6 @@ define([
             this._updateRendering(callback);
         },
 
-        resize: function (box) {
-            logger.debug(this.id + ".resize");
-        },
-
         uninitialize: function () {
             logger.debug(this.id + ".uninitialize");
         },
