@@ -15,7 +15,7 @@ Password: Demo123!
 
 ## Configuration
 1.	Add the Multi-file download widget within a context on one of your pages
-2.	Configure the OpenTab widget to either use a microflow or XPath as data source
+2.	Configure the widget to either use a microflow or XPath as data source
 3.	In both cases, make sure to configure the return entity (the entity of the files you want to download)
 4.  Optionally set the option 'auto-start download' in order to automatically start the download when the page is opened
 
