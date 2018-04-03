@@ -19,5 +19,10 @@ Password: Demo123!
 3.	In both cases, make sure to configure the return entity (the entity of the files you want to download)
 4.  Optionally set the option 'auto-start download' in order to automatically start the download when the page is opened
 
+## Known issues
+* In Chrome, the user will be asked to allow downloading multiple files (only once). If the user chooses to block downloading multiple files, or ignores the message, the widget won't work and won't download any files at all. If the widget does not seem to work, please make sure to check if the download is blocked by the browser. If so, you will see the following icon in the right section of the address bar:
+
+![Chrome warning](https://github.com/allardbrand/DownloadMultipleFiles/blob/master/misc/chrome_warning.png?raw=true "Chrome warning")
+
 ## Credits
 This widget is based on the [multi-download](https://github.com/sindresorhus/multi-download) lib of [Sindre Sorhus](https://github.com/sindresorhus)
